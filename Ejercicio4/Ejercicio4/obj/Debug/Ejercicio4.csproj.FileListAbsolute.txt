@@ -1,0 +1,12 @@
+C:\Users\juan\Desktop\MOV\MOV_tema1\Ejercicio4\Ejercicio4\Bin\Debug\ApplicationIcon.png
+C:\Users\juan\Desktop\MOV\MOV_tema1\Ejercicio4\Ejercicio4\Bin\Debug\Background.png
+C:\Users\juan\Desktop\MOV\MOV_tema1\Ejercicio4\Ejercicio4\Bin\Debug\Ejercicio4.dll
+C:\Users\juan\Desktop\MOV\MOV_tema1\Ejercicio4\Ejercicio4\Bin\Debug\Ejercicio4.pdb
+C:\Users\juan\Desktop\MOV\MOV_tema1\Ejercicio4\Ejercicio4\Bin\Debug\AppManifest.xaml
+C:\Users\juan\Desktop\MOV\MOV_tema1\Ejercicio4\Ejercicio4\Bin\Debug\Ejercicio4.xap
+C:\Users\juan\Desktop\MOV\MOV_tema1\Ejercicio4\Ejercicio4\obj\Debug\App.g.i.cs
+C:\Users\juan\Desktop\MOV\MOV_tema1\Ejercicio4\Ejercicio4\obj\Debug\MainPage.g.i.cs
+C:\Users\juan\Desktop\MOV\MOV_tema1\Ejercicio4\Ejercicio4\obj\Debug\Ejercicio4.g.resources
+C:\Users\juan\Desktop\MOV\MOV_tema1\Ejercicio4\Ejercicio4\obj\Debug\Ejercicio4.dll
+C:\Users\juan\Desktop\MOV\MOV_tema1\Ejercicio4\Ejercicio4\obj\Debug\Ejercicio4.pdb
+C:\Users\juan\Desktop\MOV\MOV_tema1\Ejercicio4\Ejercicio4\obj\Debug\XapCacheFile.xml

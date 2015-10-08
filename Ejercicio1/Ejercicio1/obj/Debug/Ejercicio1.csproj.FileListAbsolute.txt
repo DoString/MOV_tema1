@@ -1,0 +1,12 @@
+C:\Users\juan\Desktop\MOV\Ejercicio1\Ejercicio1\Bin\Debug\ApplicationIcon.png
+C:\Users\juan\Desktop\MOV\Ejercicio1\Ejercicio1\Bin\Debug\Background.png
+C:\Users\juan\Desktop\MOV\Ejercicio1\Ejercicio1\Bin\Debug\Ejercicio1.dll
+C:\Users\juan\Desktop\MOV\Ejercicio1\Ejercicio1\Bin\Debug\Ejercicio1.pdb
+C:\Users\juan\Desktop\MOV\Ejercicio1\Ejercicio1\Bin\Debug\AppManifest.xaml
+C:\Users\juan\Desktop\MOV\Ejercicio1\Ejercicio1\Bin\Debug\Ejercicio1.xap
+C:\Users\juan\Desktop\MOV\Ejercicio1\Ejercicio1\obj\Debug\App.g.i.cs
+C:\Users\juan\Desktop\MOV\Ejercicio1\Ejercicio1\obj\Debug\MainPage.g.i.cs
+C:\Users\juan\Desktop\MOV\Ejercicio1\Ejercicio1\obj\Debug\Ejercicio1.g.resources
+C:\Users\juan\Desktop\MOV\Ejercicio1\Ejercicio1\obj\Debug\Ejercicio1.dll
+C:\Users\juan\Desktop\MOV\Ejercicio1\Ejercicio1\obj\Debug\Ejercicio1.pdb
+C:\Users\juan\Desktop\MOV\Ejercicio1\Ejercicio1\obj\Debug\XapCacheFile.xml

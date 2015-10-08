@@ -1,0 +1,12 @@
+C:\Users\juan\Desktop\MOV\Ejercicio2\Ejercicio2\Bin\Debug\ApplicationIcon.png
+C:\Users\juan\Desktop\MOV\Ejercicio2\Ejercicio2\Bin\Debug\Background.png
+C:\Users\juan\Desktop\MOV\Ejercicio2\Ejercicio2\Bin\Debug\Ejercicio2.dll
+C:\Users\juan\Desktop\MOV\Ejercicio2\Ejercicio2\Bin\Debug\Ejercicio2.pdb
+C:\Users\juan\Desktop\MOV\Ejercicio2\Ejercicio2\Bin\Debug\AppManifest.xaml
+C:\Users\juan\Desktop\MOV\Ejercicio2\Ejercicio2\Bin\Debug\Ejercicio2.xap
+C:\Users\juan\Desktop\MOV\Ejercicio2\Ejercicio2\obj\Debug\App.g.i.cs
+C:\Users\juan\Desktop\MOV\Ejercicio2\Ejercicio2\obj\Debug\MainPage.g.i.cs
+C:\Users\juan\Desktop\MOV\Ejercicio2\Ejercicio2\obj\Debug\Ejercicio2.g.resources
+C:\Users\juan\Desktop\MOV\Ejercicio2\Ejercicio2\obj\Debug\Ejercicio2.dll
+C:\Users\juan\Desktop\MOV\Ejercicio2\Ejercicio2\obj\Debug\Ejercicio2.pdb
+C:\Users\juan\Desktop\MOV\Ejercicio2\Ejercicio2\obj\Debug\XapCacheFile.xml

@@ -50,35 +50,42 @@ namespace Ejercicio4
         /// </summary>
         public TipoColor TipoColores
         {
-            get { return _seleccionColor; }
+            get
+            {
+                return _seleccionColor;
+            }
+
             set
             {
-                if (_clicks % 2 == 0)
-                    _seleccionColor = TipoColor.INVERTIDO;
-                else if (_clicks % 2 != 0)
-                    _seleccionColor = TipoColor.NORMAL;
-                else
-                    _seleccionColor = value;
+                this._seleccionColor = value;
             }
         }
-
 
         // Constructor
         public MainPage()
         {
             //Se rellenan los arrays de colores:
-            this.coloresNormales = new Color[MAX_COL_ROW, MAX_COL_ROW];
-            this.coloresInvertidos = new Color[MAX_COL_ROW, MAX_COL_ROW];
             CrearMatrizColores();
             InitializeComponent();
         }
 
+        private void IncrementarClicks()
+        {
+            this._clicks = this._clicks >= (int.MaxValue - 1) ? 1 : (this._clicks + 1);
+        }
+
+        private void VaciarColumnasYFilas()
+        {
+            this.tablero.ColumnDefinitions.Clear();
+            this.tablero.RowDefinitions.Clear();
+        }
 
 
         private void CrearMatrizColores()
         {
             this.coloresArbitrarios = new Color[MAX_COL_ROW, MAX_COL_ROW];
-
+            Random rand = new Random();
+            byte[] rgb = new byte[3]; //Bytes: Rojo,Verde,Azul.
 
             switch (TipoColores)
             {
@@ -86,17 +93,23 @@ namespace Ejercicio4
                     this.colorA = Colors.White;
                     this.colorB = Colors.Black;
                     break;
-                case TipoColor.INVERTIDO:
-                    this.colorA = Colors.Black;
-                    this.colorB = Colors.White;
+                case TipoColor.INVERTIDO:                    
+                    Color temp = this.colorA;
+                    this.colorA = this.colorB;
+                    this.colorB = temp;
                     break;
-                case TipoColor.ARBITRARIO: //poner colores.
-                    this.colorA = Colors.White;
-                    this.colorB = Colors.Black;
+                case TipoColor.ARBITRARIO:
+                    //Se crea un color aleatorio
+                    rand.NextBytes(rgb);
+                    this.colorA = Color.FromArgb(ALFA_FULL, rgb[0], rgb[1], rgb[2]);
+                    //Se crea un segundo color aleatorio.
+                    rand.NextBytes(rgb);
+                    this.colorB = Color.FromArgb(ALFA_FULL, rgb[0], rgb[1], rgb[2]);
                     break;
                 default:
                     break;
             }
+
 
             for (int i = 0; i < MAX_COL_ROW; i++)
             {
@@ -122,12 +135,24 @@ namespace Ejercicio4
 
         private void PhoneApplicationPage_Loaded(object sender, RoutedEventArgs e)
         {
+            this.CrearTablero();
+        }
+
+        private void CrearTablero()
+        {
             this.tablero = this.grdTablero;
+            //Se borran las filasy columnas;
+            this.VaciarColumnasYFilas();
             //Se añaden 8 columnas y 8 filas al tablero:
             AnadirColumnasYFilas();
             //Se vacia la lista de hijos:
             this.tablero.Children.Clear();
             //Se añade un rectangulo a cada celda de la rejilla:
+            AnadirRectangulos();
+        }
+
+        private void AnadirRectangulos()
+        {
             for (int i = 0; i < this.tablero.RowDefinitions.Count; i++)
             {
                 for (int j = 0; j < this.tablero.ColumnDefinitions.Count; j++)
@@ -153,9 +178,24 @@ namespace Ejercicio4
         private void btnInvertir_Click(object sender, RoutedEventArgs e)
         {
             //Incrementa la cuenta de clicks:
-            this._clicks = this._clicks >= (int.MaxValue - 1) ? 1 : (this._clicks + 1);
+            this.IncrementarClicks();
+            this.TipoColores = TipoColor.INVERTIDO;
             this.CrearMatrizColores();
-            this.PhoneApplicationPage_Loaded(sender, e);
+            this.CrearTablero();
+        }
+
+        private void button1_Click(object sender, RoutedEventArgs e)
+        {
+            this.TipoColores = TipoColor.ARBITRARIO;
+            this.CrearMatrizColores();
+            this.CrearTablero();
+        }
+
+        private void btnResetearColor_Click(object sender, RoutedEventArgs e)
+        {
+            this.TipoColores = TipoColor.NORMAL;
+            this.CrearMatrizColores();
+            this.CrearTablero();
         }
     }
 }

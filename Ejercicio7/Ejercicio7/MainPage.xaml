@@ -1,0 +1,77 @@
+﻿<phone:PhoneApplicationPage 
+    x:Class="Ejercicio7.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d" d:DesignWidth="480" d:DesignHeight="768"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    SupportedOrientations="Portrait" Orientation="Portrait"
+    shell:SystemTray.IsVisible="True">
+
+    <!--LayoutRoot es la cuadrícula raíz donde se coloca todo el contenido de la página-->
+    <Grid x:Name="LayoutRoot" Style="{StaticResource estiloGrid}">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <!--TitlePanel contiene el nombre de la aplicación y el título de la página-->
+        <StackPanel x:Name="TitlePanel" Grid.Row="0" Margin="12,17,0,28">
+            <TextBlock x:Name="ApplicationTitle" Text="Programación de Disp. móviles tema 1" Style="{StaticResource PhoneTextNormalStyle}"/>
+            <TextBlock x:Name="PageTitle" Text="Calculadora" Margin="9,-7,0,0" Style="{StaticResource PhoneTextTitle1Style}"/>
+        </StackPanel>
+
+        <!--ContentPanel. Colocar aquí el contenido adicional-->
+        <Grid x:Name="ContentPanel" Grid.Row="1">
+            <TextBox Height="173" HorizontalAlignment="Left" Name="textBox1" Text="" VerticalAlignment="Top" Width="460" Style="{StaticResource estiloTextBox}" TextChanged="textBox1_TextChanged" Margin="12,0,0,0" />
+            <Grid Height="333" HorizontalAlignment="Left" Margin="280,254,0,0" Name="grid1" VerticalAlignment="Top" Width="188">
+                <Grid.RowDefinitions>
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <Button Content="+" Name="button1" Style="{StaticResource estiloBotonOP}" Tag="BOTON_SUMA" Click="Botones_Click"/>
+                <Button Content="-" Name="button2" Style="{StaticResource estiloBotonOP}" Grid.Row="1" Tag="BOTON_MENOS" Click="Botones_Click"/>
+                <Button Content="*" Name="button3" Style="{StaticResource estiloBotonOP}" Grid.Row="2" Tag="BOTON_X" Click="Botones_Click"/>
+                <Button Content="/" Name="button4" Style="{StaticResource estiloBotonOP}" Grid.Column="1" Tag="BOTON_DIV" Click="Botones_Click"/>
+                <Button Content="=" Name="button5" Style="{StaticResource estiloBotonOP}" Grid.Column="2" Grid.Row="2" Tag="BOTON_RES" Click="Botones_Click"/>
+                <Button Content="CE" Name="button6" Style="{StaticResource estiloBotonOP}" Grid.Column="2" Grid.Row="1" Tag="BOTON_CE" Click="Botones_Click"/>
+            </Grid>
+            <Grid Name="grdCalculadora" Style="{StaticResource estiloGrid}" Margin="24,254,206,20">
+                <Grid.RowDefinitions>
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                </Grid.ColumnDefinitions>
+                <Button Content="1" Name="btn_1" Tag="BOTON_1" Style="{StaticResource estiloBoton}" Click="Botones_Click"></Button>
+                <Button Content="2" Name="btn_2" Grid.Column="1" Tag="BOTON_2" Style="{StaticResource estiloBoton}" Click="Botones_Click"></Button>
+                <Button Content="3" Name="btn_3" Grid.Column="2" Tag="BOTON_3" Style="{StaticResource estiloBoton}" Click="Botones_Click"></Button>
+                <Button Content="4" Name="btn_4" Grid.Row="1" Tag="BOTON_4" Style="{StaticResource estiloBoton}" Click="Botones_Click"></Button>
+                <Button Content="5" Name="btn_5" Grid.Row="1" Grid.Column="1" Tag="BOTON_5" Style="{StaticResource estiloBoton}" Click="Botones_Click"></Button>
+                <Button Content="6" Name="btn_6" Grid.Row="1" Grid.Column="2" Tag="BOTON_6" Style="{StaticResource estiloBoton}" Click="Botones_Click"></Button>
+                <Button Content="7" Name="btn_7" Grid.Row="2" Tag="BOTON_7" Style="{StaticResource estiloBoton}" Click="Botones_Click"></Button>
+                <Button Content="8" Name="btn_8" Grid.Row="2" Grid.Column="1" Tag="BOTON_8" Style="{StaticResource estiloBoton}" Click="Botones_Click"></Button>
+                <Button Content="9" Name="btn_9" Grid.Row="2" Grid.Column="2" Tag="BOTON_9" Style="{StaticResource estiloBoton}" Click="Botones_Click"></Button>
+                <Button Content="0" Name="btn_0" Grid.Row="3" Grid.Column="1" Tag="BOTON_0" Style="{StaticResource estiloBoton}" Click="Botones_Click"></Button>
+                <Button Content="±" Name="btn_masMenos" Grid.Row="3" Grid.Column="2" Tag="BOTON_MASMENOS" Style="{StaticResource estiloBoton}" Click="Botones_Click"></Button>
+                <Button Content="," Name="btn_p" Grid.Row="3" Grid.Column="0" Tag="BOTON_DECIMALES" Style="{StaticResource estiloBoton}" Click="Botones_Click"></Button>
+            </Grid>
+        </Grid>
+    </Grid>
+ 
+</phone:PhoneApplicationPage>

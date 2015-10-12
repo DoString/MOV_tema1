@@ -1,0 +1,55 @@
+﻿<phone:PhoneApplicationPage 
+    x:Class="ejercicio6.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d" d:DesignWidth="480" d:DesignHeight="768"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    SupportedOrientations="Portrait" Orientation="Portrait"
+    shell:SystemTray.IsVisible="True">
+
+    <!--LayoutRoot es la cuadrícula raíz donde se coloca todo el contenido de la página-->
+    <Grid x:Name="LayoutRoot" Background="Transparent">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <!--TitlePanel contiene el nombre de la aplicación y el título de la página-->
+        <StackPanel x:Name="TitlePanel" Grid.Row="0" Margin="12,17,0,28">
+            <TextBlock x:Name="ApplicationTitle" Text="Programación de Disp. móviles tema 1" Style="{StaticResource PhoneTextNormalStyle}"/>
+            <TextBlock x:Name="PageTitle" Text="Login" Margin="9,-7,0,0" Style="{StaticResource PhoneTextTitle1Style}"/>
+        </StackPanel>
+
+        <!--ContentPanel. Colocar aquí el contenido adicional-->
+        <Grid x:Name="ContentPanel" Grid.Row="1" Margin="12,0,12,0">
+            <TextBlock Text="Introduce tu nombre de usuario:" Margin="12,47,-12,519"></TextBlock>
+            <TextBox Name="tbxNombre" Margin="0,94,0,443" />
+            <PasswordBox Name="pwdNombre" Margin="0,208,0,331" />
+            <TextBlock Margin="12,170,-12,396" Text="Introduce tu contraseña:" />
+            <Button Content="Acceder" Height="72" HorizontalAlignment="Left" Margin="12,282,0,0" Name="button1" VerticalAlignment="Top" Width="160" Click="boton_Click" />
+            <TextBlock HorizontalAlignment="Left" Margin="27,383,0,0" Name="lblBan" Text="TextBlock" VerticalAlignment="Top"
+                       Foreground="Red"
+                       Visibility="Collapsed"
+                       TextWrapping="Wrap"/>
+            <TextBlock  HorizontalAlignment="Left" Margin="27,383,0,0" Name="lblError" Text="El usuario o la contraseña son erróneos" VerticalAlignment="Top"
+                        Foreground="Red"
+                        Visibility="Collapsed"/>
+        </Grid>
+
+        <Grid Name="panelPrincipal" Grid.Row="1" Margin="12,0,12,0" Visibility="Collapsed">
+            <Image Name="miImagen"
+                   Source="http://i.blogs.es/00ba41/windows-phone/650_1200.jpg"
+                   Stretch="Fill">
+                   
+            </Image>
+        </Grid>
+
+    </Grid>
+ 
+</phone:PhoneApplicationPage>

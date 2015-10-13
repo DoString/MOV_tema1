@@ -7,6 +7,67 @@
 
     <!--Recursos de la aplicación-->
     <Application.Resources>
+        <Style x:Key="estiloTextBox" TargetType="TextBox">
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="TextBox">
+                        <Grid>
+                            <Border Name="bordeTextBox"
+                                    BorderThickness="4"
+                                    BorderBrush="CornflowerBlue"
+                                    Background="White">                                
+                            </Border>                                    
+                        </Grid>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+
+        <Style x:Key="estiloPassBox" TargetType="PasswordBox">
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="PasswordBox">
+                        <Grid>
+                            <Border Name="bordePassBox"
+                                    BorderThickness="4"
+                                    BorderBrush="CornflowerBlue"
+                                    Background="White">
+
+                            </Border>
+                        </Grid>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+
+        <Style x:Key="estiloBoton" TargetType="Button">
+            <Setter Property="Foreground" Value="White"></Setter>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Grid>
+                            <Border Name="bordeTextBox"
+                                    BorderThickness="4"
+                                    BorderBrush="CornflowerBlue"
+                                    Background="DodgerBlue">
+
+                            </Border>
+                            <ContentPresenter VerticalAlignment="Center"
+                                              HorizontalAlignment="Center"></ContentPresenter>
+                        </Grid>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+        
+        <Style x:Key="estiloLabel" TargetType="TextBlock">
+            <Setter Property="Foreground" Value="Black"></Setter>
+        </Style>
+        
+        <Style x:Key="estiloBorde" TargetType="Border">
+            <Setter Property="Background" Value="BlanchedAlmond"></Setter>
+        </Style>
+
     </Application.Resources>
 
     <Application.ApplicationLifetimeObjects>

@@ -10,3 +10,16 @@ C:\Users\juan\Desktop\MOV\MOV_tema1\ejercicio6\ejercicio6\obj\Debug\ejercicio6.g
 C:\Users\juan\Desktop\MOV\MOV_tema1\ejercicio6\ejercicio6\obj\Debug\ejercicio6.dll
 C:\Users\juan\Desktop\MOV\MOV_tema1\ejercicio6\ejercicio6\obj\Debug\ejercicio6.pdb
 C:\Users\juan\Desktop\MOV\MOV_tema1\ejercicio6\ejercicio6\obj\Debug\XapCacheFile.xml
+C:\Users\Usuario\Desktop\Tema1\MOV_tema1\ejercicio6\ejercicio6\Bin\Debug\ApplicationIcon.png
+C:\Users\Usuario\Desktop\Tema1\MOV_tema1\ejercicio6\ejercicio6\Bin\Debug\Background.png
+C:\Users\Usuario\Desktop\Tema1\MOV_tema1\ejercicio6\ejercicio6\Bin\Debug\ejercicio6.dll
+C:\Users\Usuario\Desktop\Tema1\MOV_tema1\ejercicio6\ejercicio6\Bin\Debug\ejercicio6.pdb
+C:\Users\Usuario\Desktop\Tema1\MOV_tema1\ejercicio6\ejercicio6\Bin\Debug\AppManifest.xaml
+C:\Users\Usuario\Desktop\Tema1\MOV_tema1\ejercicio6\ejercicio6\Bin\Debug\ejercicio6.xap
+C:\Users\Usuario\Desktop\Tema1\MOV_tema1\ejercicio6\ejercicio6\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Usuario\Desktop\Tema1\MOV_tema1\ejercicio6\ejercicio6\obj\Debug\App.g.i.cs
+C:\Users\Usuario\Desktop\Tema1\MOV_tema1\ejercicio6\ejercicio6\obj\Debug\MainPage.g.i.cs
+C:\Users\Usuario\Desktop\Tema1\MOV_tema1\ejercicio6\ejercicio6\obj\Debug\ejercicio6.g.resources
+C:\Users\Usuario\Desktop\Tema1\MOV_tema1\ejercicio6\ejercicio6\obj\Debug\ejercicio6.dll
+C:\Users\Usuario\Desktop\Tema1\MOV_tema1\ejercicio6\ejercicio6\obj\Debug\ejercicio6.pdb
+C:\Users\Usuario\Desktop\Tema1\MOV_tema1\ejercicio6\ejercicio6\obj\Debug\XapCacheFile.xml

@@ -1,10 +1,8 @@
-﻿<xapCache source="C:\Users\juan\Desktop\MOV\MOV_tema1\ejercicio6\ejercicio6\Bin\Debug\ejercicio6.xap" wasSigned="False" certificateThumbprint="" TimeStampUrl="" lastWriteTime="12/10/2015 20:31:58">
-  <file source="C:\Users\juan\Desktop\MOV\MOV_tema1\ejercicio6\ejercicio6\Bin\Debug\WMAppManifest.xml" archivePath="WMAppManifest.xml" lastWriteTime="12/10/2015 18:04:30" />
-  <file source="C:\Users\juan\Desktop\MOV\MOV_tema1\ejercicio6\ejercicio6\Background.png" archivePath="Background.png" lastWriteTime="09/10/2015 14:28:12" />
-  <file source="C:\Users\juan\Desktop\MOV\MOV_tema1\ejercicio6\ejercicio6\ApplicationIcon.png" archivePath="ApplicationIcon.png" lastWriteTime="09/10/2015 14:28:12" />
-  <file source="C:\Users\juan\Desktop\MOV\MOV_tema1\ejercicio6\ejercicio6\obj\Debug\ejercicio6.dll" archivePath="ejercicio6.dll" lastWriteTime="12/10/2015 20:31:58" />
-  <file source="C:\Users\juan\Desktop\MOV\MOV_tema1\ejercicio6\ejercicio6\SplashScreenImage.jpg" archivePath="SplashScreenImage.jpg" lastWriteTime="09/10/2015 14:28:14" />
-  <file source="C:\Users\juan\Desktop\MOV\MOV_tema1\ejercicio6\ejercicio6\Bin\Debug\AppManifest.xaml" archivePath="AppManifest.xaml" lastWriteTime="12/10/2015 18:04:30" />
-  <file source="C:\Users\juan\Desktop\MOV\MOV_tema1\ejercicio6\ejercicio6\Bin\Debug\ApplicationIcon.png" archivePath="ApplicationIcon.png" lastWriteTime="09/10/2015 14:28:12" />
-  <file source="C:\Users\juan\Desktop\MOV\MOV_tema1\ejercicio6\ejercicio6\Bin\Debug\Background.png" archivePath="Background.png" lastWriteTime="09/10/2015 14:28:12" />
+﻿<xapCache source="C:\Users\Usuario\Desktop\Tema1\MOV_tema1\ejercicio6\ejercicio6\Bin\Debug\ejercicio6.xap" wasSigned="False" certificateThumbprint="" TimeStampUrl="" lastWriteTime="13/10/2015 12:27:09">
+  <file source="C:\Users\Usuario\Desktop\Tema1\MOV_tema1\ejercicio6\ejercicio6\Bin\Debug\WMAppManifest.xml" archivePath="WMAppManifest.xml" lastWriteTime="13/10/2015 11:54:55" />
+  <file source="C:\Users\Usuario\Desktop\Tema1\MOV_tema1\ejercicio6\ejercicio6\Background.png" archivePath="Background.png" lastWriteTime="13/10/2015 11:54:55" />
+  <file source="C:\Users\Usuario\Desktop\Tema1\MOV_tema1\ejercicio6\ejercicio6\ApplicationIcon.png" archivePath="ApplicationIcon.png" lastWriteTime="13/10/2015 11:54:55" />
+  <file source="C:\Users\Usuario\Desktop\Tema1\MOV_tema1\ejercicio6\ejercicio6\obj\Debug\ejercicio6.dll" archivePath="ejercicio6.dll" lastWriteTime="13/10/2015 12:27:09" />
+  <file source="C:\Users\Usuario\Desktop\Tema1\MOV_tema1\ejercicio6\ejercicio6\SplashScreenImage.jpg" archivePath="SplashScreenImage.jpg" lastWriteTime="13/10/2015 11:54:55" />
+  <file source="C:\Users\Usuario\Desktop\Tema1\MOV_tema1\ejercicio6\ejercicio6\Bin\Debug\AppManifest.xaml" archivePath="AppManifest.xaml" lastWriteTime="13/10/2015 12:06:20" />
 </xapCache>

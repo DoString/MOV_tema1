@@ -28,11 +28,17 @@
 
         <!--ContentPanel. Colocar aquí el contenido adicional-->
         <Grid x:Name="ContentPanel" Grid.Row="1" Margin="12,0,12,0">
-            <TextBlock Text="Introduce tu nombre de usuario:" Margin="12,47,-12,519"></TextBlock>
-            <TextBox Name="tbxNombre" Margin="0,94,0,443" />
-            <PasswordBox Name="pwdNombre" Margin="0,208,0,331" />
-            <TextBlock Margin="12,170,-12,396" Text="Introduce tu contraseña:" />
-            <Button Content="Acceder" Height="72" HorizontalAlignment="Left" Margin="12,282,0,0" Name="button1" VerticalAlignment="Top" Width="160" Click="boton_Click" />
+            <Border Style="{StaticResource estiloBorde}"
+                    Margin="12,47,39,519">
+                <TextBlock Style="{StaticResource estiloLabel}" Text="Introduce tu nombre de usuario:" Margin="12,47,-12,519"></TextBlock>
+            </Border>
+            <TextBox Name="tbxNombre" Margin="0,94,0,443" Style="{StaticResource estiloTextBox}"/>
+            <PasswordBox Name="pwdNombre" Margin="0,208,0,331" Style="{StaticResource estiloPassBox}" />
+            <Border Style="{StaticResource estiloBorde}"
+                    Margin="12,170,39,396">
+                <TextBlock Style="{StaticResource estiloLabel}" Margin="12,170,-12,396" Text="Introduce tu contraseña:" />
+            </Border>
+            <Button Content="Acceder" Height="72" HorizontalAlignment="Left" Margin="6,308,0,0" Name="button1" VerticalAlignment="Top" Width="160" Click="boton_Click" Style="{StaticResource estiloBoton}" />
             <TextBlock HorizontalAlignment="Left" Margin="27,383,0,0" Name="lblBan" Text="TextBlock" VerticalAlignment="Top"
                        Foreground="Red"
                        Visibility="Collapsed"

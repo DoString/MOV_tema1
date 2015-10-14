@@ -27,25 +27,29 @@
         </StackPanel>
 
         <!--ContentPanel. Colocar aquí el contenido adicional-->
-        <Grid x:Name="ContentPanel" Grid.Row="1" Margin="12,0,12,0">
+        <Grid Style="{StaticResource estiloGrid}"  x:Name="ContentPanel" Grid.Row="1" Margin="12,0,12,0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="424*" />
+                <RowDefinition Height="183*" />
+            </Grid.RowDefinitions>
             <Border Style="{StaticResource estiloBorde}"
-                    Margin="12,47,39,519">
-                <TextBlock Style="{StaticResource estiloLabel}" Text="Introduce tu nombre de usuario:" Margin="12,47,-12,519"></TextBlock>
+                    Margin="12,47,0,336" HorizontalAlignment="Left" Width="405">
+                <TextBlock  Style="{StaticResource estiloLabel}" Text="Introduce tu nombre de usuario:" Width="405"></TextBlock>
             </Border>
-            <TextBox Name="tbxNombre" Margin="0,94,0,443" Style="{StaticResource estiloTextBox}"/>
-            <PasswordBox Name="pwdNombre" Margin="0,208,0,331" Style="{StaticResource estiloPassBox}" />
+            <TextBox Name="tbxNombre" Margin="12,91,36,263" Style="{StaticResource estiloTextBox}" Text="usuario" />
+            <PasswordBox Password="1234" Name="pwdNombre" Margin="9,252,39,104" Style="{StaticResource estiloPassBox}" />
             <Border Style="{StaticResource estiloBorde}"
-                    Margin="12,170,39,396">
-                <TextBlock Style="{StaticResource estiloLabel}" Margin="12,170,-12,396" Text="Introduce tu contraseña:" />
+                    Margin="9,205,42,178">
+                <TextBlock Style="{StaticResource estiloLabel}" Text="Introduce tu contraseña:" />
             </Border>
-            <Button Content="Acceder" Height="72" HorizontalAlignment="Left" Margin="6,308,0,0" Name="button1" VerticalAlignment="Top" Width="160" Click="boton_Click" Style="{StaticResource estiloBoton}" />
-            <TextBlock HorizontalAlignment="Left" Margin="27,383,0,0" Name="lblBan" Text="TextBlock" VerticalAlignment="Top"
+            <Button Content="Acceder" Height="72" HorizontalAlignment="Left" Margin="12,342,0,0" Name="button1" VerticalAlignment="Top" Width="160" Click="boton_Click" Style="{StaticResource estiloBoton}" />
+            <TextBlock HorizontalAlignment="Left" Margin="16,12,0,0" Name="lblBan" Text="TextBlock" VerticalAlignment="Top"
                        Foreground="Red"
                        Visibility="Collapsed"
-                       TextWrapping="Wrap"/>
-            <TextBlock  HorizontalAlignment="Left" Margin="27,383,0,0" Name="lblError" Text="El usuario o la contraseña son erróneos" VerticalAlignment="Top"
+                       TextWrapping="Wrap" Grid.Row="1" />
+            <TextBlock  HorizontalAlignment="Left" Margin="16,12,0,0" Name="lblError" Text="El usuario o la contraseña son erróneos" VerticalAlignment="Top"
                         Foreground="Red"
-                        Visibility="Collapsed"/>
+                        Visibility="Collapsed" Grid.Row="1" />
         </Grid>
 
         <Grid Name="panelPrincipal" Grid.Row="1" Margin="12,0,12,0" Visibility="Collapsed">

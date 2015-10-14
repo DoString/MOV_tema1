@@ -8,15 +8,23 @@
     <!--Recursos de la aplicación-->
     <Application.Resources>
         <Style x:Key="estiloTextBox" TargetType="TextBox">
+            <Setter Property="Foreground" Value="Black"></Setter>
+            <Setter Property="MaxLength" Value="20"></Setter>
             <Setter Property="Template">
                 <Setter.Value>
                     <ControlTemplate TargetType="TextBox">
                         <Grid>
                             <Border Name="bordeTextBox"
-                                    BorderThickness="4"
-                                    BorderBrush="CornflowerBlue"
+                                    BorderThickness="10"
+                                    BorderBrush="LimeGreen"
                                     Background="White">                                
-                            </Border>                                    
+                            </Border>
+                            <ContentPresenter Content="{TemplateBinding Text}"
+                                              HorizontalAlignment="Left"
+                                              Margin="10"
+                                             >
+                                
+                            </ContentPresenter>
                         </Grid>
                     </ControlTemplate>
                 </Setter.Value>
@@ -24,16 +32,24 @@
         </Style>
 
         <Style x:Key="estiloPassBox" TargetType="PasswordBox">
+            <Setter Property="Foreground" Value="Black"></Setter>
+            <Setter Property="PasswordChar" Value="*"></Setter>
+            <Setter Property="MaxLength" Value="20"></Setter>
             <Setter Property="Template">
                 <Setter.Value>
                     <ControlTemplate TargetType="PasswordBox">
                         <Grid>
                             <Border Name="bordePassBox"
-                                    BorderThickness="4"
-                                    BorderBrush="CornflowerBlue"
+                                    BorderThickness="10"
+                                    BorderBrush="LimeGreen"
                                     Background="White">
-
                             </Border>
+                            <ContentPresenter Content="{TemplateBinding Password}"
+                                              HorizontalAlignment="Left"                                              
+                                              Margin="10"
+                                              >
+
+                            </ContentPresenter>
                         </Grid>
                     </ControlTemplate>
                 </Setter.Value>
@@ -49,7 +65,7 @@
                             <Border Name="bordeTextBox"
                                     BorderThickness="4"
                                     BorderBrush="CornflowerBlue"
-                                    Background="DodgerBlue">
+                                    Background="DeepSkyBlue">
 
                             </Border>
                             <ContentPresenter VerticalAlignment="Center"
@@ -62,11 +78,29 @@
         
         <Style x:Key="estiloLabel" TargetType="TextBlock">
             <Setter Property="Foreground" Value="Black"></Setter>
+            <Setter Property="TextWrapping" Value="Wrap"></Setter>
+            <Setter Property="TextAlignment" Value="Center"></Setter>
+            <Setter Property="FontFamily" Value="Trebuchet MS"></Setter>
         </Style>
         
         <Style x:Key="estiloBorde" TargetType="Border">
-            <Setter Property="Background" Value="BlanchedAlmond"></Setter>
+            <Setter Property="Background" Value="WhiteSmoke"></Setter>
+            <Setter Property="BorderBrush" Value="NavajoWhite"></Setter>
+            <Setter Property="BorderThickness" Value="4"></Setter>
         </Style>
+
+        <Style x:Key="estiloGrid" TargetType="Grid">
+            <Setter Property="Background">
+                <Setter.Value>
+                    <LinearGradientBrush StartPoint="0,0"
+                                         EndPoint="1,1">
+                        <GradientStop Offset="0.534" Color="CornflowerBlue"></GradientStop>
+                        <GradientStop Offset="0.734" Color="White"></GradientStop>
+                    </LinearGradientBrush>
+                </Setter.Value>
+            </Setter>
+        </Style>
+
 
     </Application.Resources>
 
